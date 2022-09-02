@@ -16,6 +16,4 @@ public abstract class Sample : Entity<string>, ISample, IEntity<string>
     public decimal? HighPrice { get; set; }
     public decimal? LowPrice { get; set; }
     public virtual ICollection<Observation>? Observations { get; set; }
-    public long? SampleStart { get; set; }
-    public long? SampleEnd { get; set; }
 }
