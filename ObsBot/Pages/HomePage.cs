@@ -28,7 +28,7 @@ partial class HomePage
                 },
                 new StackLayout()
                 {
-                    VerticalOptions = LayoutOptions.StartAndExpand,
+                    VerticalOptions = LayoutOptions.Center,
                     Children =
                     {
                         new Label()
@@ -39,13 +39,16 @@ partial class HomePage
                         new Button() { Text = "status" }
                             .Margins(5, 5, 5, 5)
                             .Paddings(5, 5, 5, 5)
+                            .End()
                             .Bind(Button.CommandProperty, nameof(_pm.StatusCommand)),
                         new Button() { Text = "groups", IsEnabled = false}
                             .Margins(5, 5, 5, 5)
-                            .Paddings(5, 5, 5, 5),
+                            .Paddings(5, 5, 5, 5)
+                            .End(),
                         new Button() { Text = "settings" }
                             .Margins(5, 5, 5, 5)
                             .Paddings(5, 5, 5, 5)
+                            .End()
                             .Bind(Button.CommandProperty, nameof(_pm.SettingsCommand)),
                     }
                 },

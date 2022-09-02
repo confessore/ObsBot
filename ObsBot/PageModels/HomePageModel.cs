@@ -15,7 +15,6 @@ class HomePageModel : BasePageModel
         _defaultService = defaultService;
         StatusCommand = new Command(StatusAsync);
         SettingsCommand = new Command(SettingsAsync);
-        System.Diagnostics.Debug.WriteLine("home created...");
     }
 
     string? greeting = string.Empty;

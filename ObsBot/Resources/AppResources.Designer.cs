@@ -81,9 +81,9 @@ public class AppResources {
     /// <summary>
     ///   Looks up a localized string similar to what is your name?.
     /// </summary>
-    public static string caregiver_name {
+    public static string agent_name {
         get {
-            return ResourceManager.GetString("caregiver_name", resourceCulture);
+            return ResourceManager.GetString("agent_name", resourceCulture);
         }
     }
     
